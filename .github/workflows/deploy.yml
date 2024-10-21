@@ -27,7 +27,7 @@ jobs:
       # Step 3: Deploy the project to the EC2 instance
       - name: Deploy to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@54.162.150.29 << EOF
+          ssh -o StrictHostKeyChecking=no ubuntu@ec2-98-81-227-250.compute-1.amazonaws.com << EOF
             cd /home/ubuntu/demo_project
             git pull origin main
             source venv/bin/activate
